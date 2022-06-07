@@ -1,0 +1,456 @@
+body{
+   background-color:#0c0c30; 
+   color: white;
+}
+/* header section  */
+header{
+    background-color: #0c0c30;
+    color: white;
+    position: sticky;
+    top: 0px;
+}
+.header-container{
+    margin:0px 64px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+ 
+  
+
+ /* left section in header  */
+.left{
+    display: flex;
+    justify-content: space-between;
+    width: 35vw;
+}
+.left-list{
+    height: 87px;
+    width: 25vw;
+  
+
+}
+.left-list ul{
+    display: flex;
+    justify-content: space-between;
+ box-sizing: border-box;
+ padding: 24px;
+
+}
+.left-list ul li{
+list-style: none;
+}
+
+
+.left-list ul li a:hover{
+color: rgb(168, 145, 145);
+line-height: 20px;
+
+border-bottom: 2px solid rgb(175, 44, 44);
+
+
+}
+.left-list ul li a{
+text-decoration: none;
+color: white;
+
+}
+.logo-image{
+    display: block;
+}
+
+
+ /* right section in header  */
+.right{
+    display: flex;
+}
+.right-content{
+    display: flex;
+    margin-right: 70px;
+    margin-top: 19px;
+  }
+
+.icon{
+    position: absolute;
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    width: 321px;
+    margin: 3px 0px 0px 4px;
+    color: black;
+  
+}
+.search input{
+    height: 19px;
+    width: 299px;
+    border-radius: 10px;
+    padding-left: 25px;
+    cursor: pointer;
+}
+#bell-icon{
+    margin: 12px 40px 0px 0px;
+}
+#bell-icon:hover{
+    color: rgb(216, 84, 84);
+    cursor: pointer;
+    }
+
+
+/* main section  */
+.main-container{
+    display: flex;
+   margin-left: 150px;
+   margin-top: 50px;
+}
+/* left part of main section  */
+
+
+
+/* front image  */
+.main-left{ 
+    width: 63vw;  
+}
+#front{
+    display: flex;
+    height: 30vh;
+    width: 59vw;
+    align-items: center;
+    justify-content: space-between;
+   
+}
+.first-background{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8DEibpnT3c5uBHrINVGQ7lddxfJLFPj32a1iad4ocpBH3pcvUHSgRgGcW6OH_g4jYX4Y&usqp=CAU) ;
+  
+    height: 100%;
+    width: 48%;
+    transition: 0.5s;
+  
+   }
+.first-background:hover{
+     
+      transform: scale(1.2);
+   }
+.secound-background{
+background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQKyQwXTWoS3C1mz-5hMQyDMEm7Xsy05Yll0Gk_zfA95U_a4g3XJvM6D-H1UkRzmA8WWg&usqp=CAU);
+background-position: left ;
+height: 100%;
+width: 48%;
+transition: 0.5s;
+
+}
+.secound-background:hover{
+    transform: scale(1.2);
+}
+
+
+
+
+/* section 1 after front image  */
+
+
+.section-container{
+  margin-top: 50px;
+}
+.section-container h3{
+    margin-bottom:15px;
+    font-size: 25px;
+}
+.working{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 60vw;
+   
+}
+.working img{
+    height: 100px;
+    width: 100px;
+    transition: 0.5s;
+   
+}
+.working img:hover{
+    transform: scale(1.5);
+   
+}
+.working-div-image{
+    display: flex;
+    width: 30vw;
+ margin-top: 20px;
+}
+.text3{
+    font-size: 15px;
+    margin: 20px 0px 0px 4px;
+}
+.image-container{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10px;
+}
+.information{
+    margin-left: 140px;
+}
+
+
+
+/* slidebar in section 1 */
+.bar{
+    background-color: white;
+    color: rgb(12, 11, 11);
+    width: 120px;
+    position: absolute;
+   visibility: collapse;
+   
+}
+
+.bar-content{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 2px solid black;
+   
+}
+
+/* toggle sidebar in section 1 */
+#toggle1{
+    display: none;
+}
+#toggle1:checked ~ *.bar {
+    visibility: visible;
+  }
+#toggle2{
+    display: none;
+}
+#toggle2:checked ~ *.bar {
+    visibility: visible;
+  }
+#toggle3{
+    display: none;
+}
+#toggle3:checked ~ *.bar {
+    visibility: visible;
+  }
+#toggle4{
+    display: none;
+}
+#toggle4:checked ~ *.bar {
+    visibility: visible;
+  }
+
+
+
+
+/* sction 2 artist  */
+
+
+.artist-container{
+    display: flex;
+    justify-content: space-between;
+}
+.artist{
+    text-align: center;
+}
+.artist img{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    opacity:0.8;
+} 
+.artist p{
+    font-size: 20px;
+}
+
+
+
+/* section 3 station  */
+
+.station{
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    font-size: 25px;
+    font-weight: bolder;
+    background-color: rgb(44, 44, 126);
+   align-items: center;
+   padding:10px 30px 10px 30px;
+  
+}
+#lead-image{
+    background: url(https://image.shutterstock.com/image-photo/microphone-on-stage-closeup-mic-260nw-1595728213.jpg) no-repeat ;
+    background-size:cover;
+    background-position: right ;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+#type1-image{
+    background: url(https://image.shutterstock.com/image-photo/microphone-on-stage-closeup-mic-260nw-1595728213.jpg) no-repeat;
+    background-size: cover;
+    background-position: bottom ;
+    height: 110px;
+    width: 120px;
+    border-radius: 50%;
+    opacity: 0.6;
+}
+#type2-image{
+    background: url(https://image.shutterstock.com/image-photo/microphone-on-stage-closeup-mic-260nw-1595728213.jpg) no-repeat;
+    background-size: cover;
+    background-position: bottom ;
+    height: 110px;
+    width: 120px;
+    border-radius: 50%;
+    opacity: 0.6;
+}
+#type3-image{
+    background: url(https://image.shutterstock.com/image-photo/microphone-on-stage-closeup-mic-260nw-1595728213.jpg) no-repeat;
+    background-size: cover;
+    background-position: bottom ;
+    height: 110px;
+    width: 120px;
+    border-radius: 50%;
+    opacity: 0.6;
+}
+#type4-image{
+    background: url(https://image.shutterstock.com/image-photo/microphone-on-stage-closeup-mic-260nw-1595728213.jpg) no-repeat;
+    background-size: cover;
+    background-position: bottom ;
+    height: 110px;
+    width: 120px;
+    border-radius: 50%;
+    opacity: 0.6;
+}
+#type5-image{
+    background: url(https://image.shutterstock.com/image-photo/microphone-on-stage-closeup-mic-260nw-1595728213.jpg) no-repeat;
+    background-size: cover;
+    background-position: bottom ;
+    height: 110px;
+    width: 120px;
+    border-radius: 50%;
+    opacity: 0.6;
+}
+.station p{
+    text-align: center;
+ margin-top: 40px;
+}
+#lead-image p{
+    margin-top: 60px;
+}
+
+/* section 4 mood playlist  */
+
+
+.three-types{
+    display: flex;
+    color: white;
+    justify-content: space-between;
+
+}
+#type1{
+    background: url(https://image.shutterstock.com/image-photo/microphone-on-stage-closeup-mic-260nw-1595728213.jpg);
+    background-size: cover;
+     width: 40vh;
+    height: 22vh;
+    text-align: center;
+    box-sizing: border-box; 
+    padding:70px;
+    border-radius: 30px;
+    opacity: 0.7;
+}
+#type2{
+    background: url(https://image.shutterstock.com/image-photo/microphone-on-stage-closeup-mic-260nw-1595728213.jpg);
+    background-size: cover;
+     width: 40vh;
+    height: 22vh;
+    text-align: center;
+    box-sizing: border-box; 
+    padding:70px;
+    border-radius: 30px;
+    opacity: 0.7;
+}
+#type3{
+    background: url(https://image.shutterstock.com/image-photo/microphone-on-stage-closeup-mic-260nw-1595728213.jpg);
+    background-size: cover;
+     width: 40vh;
+    height: 22vh;
+    text-align: center;
+    box-sizing: border-box; 
+    padding:70px;
+    border-radius: 30px;
+    opacity: 0.7;
+}
+.three-types p{
+    font-size: 30px;
+    color: wheat;
+}
+
+
+ /* section 5 latest hindi release  */
+
+.bollywood{
+    display: flex;
+    justify-content: space-between;
+}
+.bolly img{
+    height: 130px;
+    width: 140px;
+}
+
+
+
+
+/* right part of main section  */
+
+.main-right{
+  
+    height: 80vh;
+    width: 20vw;
+    margin-right: 150px;
+}
+#queue-head{
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 0px 50px 0px;
+}
+#toggle-q{
+    display: none;
+}
+#toggle-q:checked ~ *.bar {
+    visibility: visible;
+  }
+  .information-q{
+      margin-top: 13px;
+  }
+
+/* playlist under queue  */
+.queue-content{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0px 30px 20px;
+}
+.queue-left{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+}
+.queue-left img{
+    height: 50px;
+    width: 50px;
+}
+.queue-right i{
+    margin:10px 10px 0px 0px;
+}
+.queue-scroll{
+    transition-delay: 1s, 250ms;
+    
+}
+.queue-scroll{
+    width: 300px;
+    height: 80vh;
+    overflow-y: scroll;
+    scrollbar-color: rebeccapurple green;
+   }
+   .queue-scroll::-webkit-scrollbar {
+    display: none;
+}
+
+/* thank you  */
